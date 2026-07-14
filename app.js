@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{const theme=document.createElement('link');theme.rel='stylesheet';theme.href='light.css?v=20260715-1';document.head.appendChild(theme);const fixes=document.createElement('script');fixes.src='submissions.js?v=20260715-2';document.body.appendChild(fixes)});
+document.addEventListener('DOMContentLoaded',()=>{const theme=document.createElement('link');theme.rel='stylesheet';theme.href='light.css?v=20260715-1';document.head.appendChild(theme);const fixes=document.createElement('script');fixes.src='submissions.js?v=20260715-3';document.body.appendChild(fixes)});
 const pianos=[
 {id:101,name:'正佳广场共享钢琴',city:'广州',district:'天河区',address:'正佳广场（18号线冼村站B口向前约700米；1号线/3号线体育西路站）',type:'商场',access:'以现场为准',status:'可弹奏',hours:'以商场开放时间为准',note:'可从18号线冼村站B口步行约700米，或由体育西路站前往。',lat:23.1321,lng:113.3274},
 {id:102,name:'番禺广场站拾光音乐厅钢琴',city:'广州',district:'番禺区',address:'18号线番禺广场地铁站拾光音乐厅',type:'地铁站',access:'指定时段开放',status:'可弹奏',hours:'周五、周六 17:00–20:00；周日 14:00–17:00',note:'请在开放时段前往，并以现场安排为准。',lat:22.9377,lng:113.3845},
