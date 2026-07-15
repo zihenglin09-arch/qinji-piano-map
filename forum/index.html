@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="琴迹匿名琴友论坛，分享钢琴、曲目与城市琴聚">
+  <meta name="author" content="Will Lin">
+  <title>琴友论坛｜琴迹</title>
+  <link rel="stylesheet" href="style.css?v=20260715-1">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../"><span>♩</span><b>琴迹</b></a>
+    <nav><a href="../">共享钢琴地图</a><a href="../#events">琴友活动</a></nav>
+    <button class="newPost" id="openComposer">＋ 匿名发帖</button>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="kicker"><i></i> PIANO COMMUNITY</p>
+      <h1>琴友论坛</h1>
+      <p>匿名分享城市钢琴见闻、曲目灵感与琴聚故事。温柔交流，认真聆听。</p>
+      <div class="credit">网站由 <strong>Will Lin</strong> 制作</div>
+    </section>
+    <section class="board">
+      <aside class="categories">
+        <p>主题分类</p>
+        <button class="active" data-category="全部">全部帖子</button>
+        <button data-category="城市琴迹">城市琴迹</button>
+        <button data-category="曲目交流">曲目交流</button>
+        <button data-category="演奏心得">演奏心得</button>
+        <button data-category="琴友活动">琴友活动</button>
+        <button data-category="自由讨论">自由讨论</button>
+        <div class="rules"><b>社区约定</b><span>匿名不等于失去边界。请尊重他人，不公开个人隐私，不发布广告与违法内容。</span></div>
+      </aside>
+      <div class="feed">
+        <div class="feedHead"><div><b id="feedTitle">全部帖子</b><span id="postCount">正在连接云端…</span></div><label><span>⌕</span><input id="search" placeholder="搜索帖子"></label></div>
+        <div id="status" class="status">正在连接琴友云端社区…</div>
+        <div id="posts" class="posts"></div>
+      </div>
+    </section>
+  </main>
+  <footer><span>♩ 琴迹 · 琴友论坛</span><span>网站由 <strong>Will Lin</strong> 制作</span></footer>
+
+  <div class="modal" id="composer" hidden><div class="dialog"><button class="close" data-close="composer">×</button><p class="kicker">NEW TOPIC</p><h2>匿名发布新帖子</h2><form id="postForm"><label>匿名昵称<input name="nickname" maxlength="18" required placeholder="例如：夜色里的C大调"></label><label>帖子分类<select name="category"><option>城市琴迹</option><option>曲目交流</option><option>演奏心得</option><option>琴友活动</option><option>自由讨论</option></select></label><label>标题<input name="title" maxlength="60" required placeholder="给帖子起一个清晰的标题"></label><label>内容<textarea name="content" maxlength="2000" required placeholder="写下你想和琴友分享的内容…"></textarea></label><button class="primary" type="submit">发布到论坛</button></form></div></div>
+  <div class="modal" id="thread" hidden><article class="dialog threadDialog"><button class="close" data-close="thread">×</button><div id="threadBody"></div><div class="replies" id="replies"></div><form id="replyForm"><input type="hidden" name="postId"><label>匿名昵称<input name="nickname" maxlength="18" required placeholder="你的匿名昵称"></label><label>回复内容<textarea name="content" maxlength="800" required placeholder="友善地加入讨论…"></textarea></label><button class="primary" type="submit">发表回复</button></form></article></div>
+  <div class="toast" id="toast" hidden></div>
+  <script src="https://static.cloudbase.net/cloudbase-js-sdk/2.27.1/cloudbase.full.js"></script>
+  <script src="../cloudbase-config.js?v=20260715-1"></script>
+  <script src="app.js?v=20260715-1"></script>
+</body>
+</html>
